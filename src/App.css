@@ -116,6 +116,36 @@ a {
   text-decoration: none;
 }
 
+html, body {
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #003049, #014f43); /* example */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* keeps background in place on scroll */
+}
+
+
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .card {
+    padding: 0.75rem;
+  }
+}
+
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
