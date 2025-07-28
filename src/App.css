@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #003049, #014f43); /* dark blue to green */
+  color: white;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  width: 120%;
+  padding: 1rem 1rem;
+  background-color: #014f43;
+  text-align: center;
+  animation: fadeInDown 1s ease-out;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #cbd5e1;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+/* Section Layout */
+section {
+  padding: 1.5rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-in-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #2dd4bf;
+}
+
+/* Skills Section */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  text-align: center;
+}
+
+.skills .card {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+
+/* Projects Section (default spacing retained) */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+/* Experience Section – tighter spacing between cards */
+#experience .card {
+  margin-bottom: 1rem;
+}
+
+/* Contact Section – tighter space */
+#contact .card {
+  padding: 1rem;
+}
+
+/* All Cards */
+.card {
+  background: #062c27;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  width: 120%;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #062c27;
+  
+}
+
+a {
+  color: #006aff;
+  text-decoration: none;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
