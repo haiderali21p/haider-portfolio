@@ -29,7 +29,7 @@ const App = () => {
         <p>Frontend Developer | Creative Problem Solver</p>
         <a
   href="/Haider_Ali_CV.pdf"
-  download="Haider_Ali _CV.pdf"
+  download="Haider_Ali_CV.pdf"
   className="download-btn"
 >
   Download CV
