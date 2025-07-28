@@ -70,14 +70,15 @@ h2 {
 
 .skills .card {
   padding: 0.6rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
+
 }
 
 /* Projects Section (default spacing retained) */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  gap: 1rem;
 }
 
 /* Experience Section – tighter spacing between cards */
@@ -144,6 +145,8 @@ html, body {
     padding: 0.75rem;
   }
 }
+
+
 
 
 @keyframes fadeInDown {
