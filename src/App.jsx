@@ -27,6 +27,14 @@ const App = () => {
         <img src="/profile.jpg" alt="Haider Ali" className="profile-pic" />
         <h1>Haider Ali</h1>
         <p>Frontend Developer | Creative Problem Solver</p>
+        <a
+  href="/Haider_Ali_CV.pdf"
+  download="Haider_Ali _CV.pdf"
+  className="download-btn"
+>
+  Download CV
+</a>
+
       </header>
 
       <section id="skills">
