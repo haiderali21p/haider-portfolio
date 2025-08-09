@@ -46,30 +46,38 @@ const App = () => {
         </div>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <div className="projects">
-          {[
-            {
-              title: "Coza Store",
-              desc: "E-commerce site with modern UI, responsive layout, and shopping cart."
-            },
-            {
-              title: "MiniGram",
-              desc: "Instagram-style app with login, feed, and post sharing features."
-            },
-            {
-              title: "Online Voting System",
-              desc: "Java-based secure voting system with admin controls and real-time results."
-            }
-          ].map(project => (
-            <div className="card" key={project.title}>
-              <h3>{project.title}</h3>
-              <p>{project.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+ <section id="projects">
+  <h2>Projects</h2>
+  <div className="projects">
+    {[
+      {
+        title: "Coza Store",
+        desc: "E-commerce site with modern UI, responsive layout, and shopping cart."
+      },
+      {
+        title: "MiniGram",
+        desc: "Instagram-style app with login, feed, and post sharing features."
+      },
+      {
+        title: "Online Voting System",
+        desc: "Java-based secure voting system with admin controls and real-time results."
+      },
+      {
+        title: "To-Do List App (Simple Version)",
+        desc: "A simple To-Do List App built using HTML, CSS, and JavaScript. Users can add new tasks, delete existing ones, and mark tasks as done for better task management."
+      },
+      {
+        title: "Simple Calculator",
+        desc: "A basic Calculator built with HTML, CSS, and JavaScript. It supports addition, subtraction, multiplication, and division using interactive buttons and input fields for easy calculations."
+      }
+    ].map((project) => (
+      <div className="card" key={project.title}>
+        <h3>{project.title}</h3>
+        <p>{project.desc}</p>
+      </div>
+    ))}
+  </div>
+</section>
 
       <section id="experience">
         <h2>Experience</h2>
@@ -103,7 +111,7 @@ const App = () => {
       </section>
 
       <footer>
-        <p>&copy; 2025 Haider Ali All Right Reserved.</p>
+        <p>&copy; 2025 Haider Ali | All Right Reserved.</p>
       </footer>
     </div>
   );
