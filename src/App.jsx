@@ -40,7 +40,7 @@ const App = () => {
       <section id="skills">
         <h2>Skills</h2>
         <div className="skills">
-          {["HTML", "CSS", "JavaScript", "React", "MySQL", "Tailwind CSS"].map(skill => (
+          {["HTML", "CSS", "JavaScript", "React.Js", "MySQL", "Tailwind CSS","MongoDB", "Git", "GitHub", "Deployment"].map(skill => (
             <div className="card" key={skill}>{skill}</div>
           ))}
         </div>
@@ -52,15 +52,15 @@ const App = () => {
     {[
       {
         title: "Coza Store",
-        desc: "E-commerce site with modern UI, responsive layout, and shopping cart."
+        desc: "E-commerce site with modern UI, responsive layout, and shopping cart functionality. Built with React, Tailwind CSS, and MySQL for product management."
       },
       {
         title: "MiniGram",
-        desc: "Instagram-style app with login, feed, and post sharing features."
+        desc: "Instagram-style app with login, feed, and post sharing features Web Based. Built with React, CSS, and MongoDB for data storage."
       },
       {
-        title: "Online Voting System",
-        desc: "Java-based secure voting system with admin controls and real-time results."
+        title: "Personal Portfolio",
+        desc: "Personal Portfolio Website: Developed and deployed a responsive personal portfolio website using HTML, CSS, React (hosted on Vercel)."
       },
       {
         title: "To-Do List App (Simple Version)",
@@ -107,6 +107,7 @@ const App = () => {
           <p>Phone: 0327-4076101</p>
           <p>Location: Lahore, Pakistan</p>
           <p><a href="https://linkedin.com/in/haider-ali-b15831372" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+
         </div>
       </section>
 
